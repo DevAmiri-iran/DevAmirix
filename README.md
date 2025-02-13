@@ -1,5 +1,7 @@
 # DevAmirix
-
+<p align="center">
+  <img src="https://github.com/DevAmiri-iran/DevAmirix/blob/main/public/logo.png?raw=true" alt="Logo" width="300">
+</p>
 **DevAmirix** is a modern PHP framework that simplifies web application development. It offers a robust, modular architecture and a comprehensive set of tools to build dynamic, secure, and scalable web applications with ease.
 
 ---
