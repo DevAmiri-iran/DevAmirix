@@ -65,7 +65,7 @@
    OR
     ```bash
     composer create-project devamiri/devamirix
-    cd DevAmirix
+    cd devamirix
     ```
 
 2. **Install Dependencies via Composer:**
