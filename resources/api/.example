@@ -1,0 +1,16 @@
+<?php
+use App\Support\APIManager;
+
+$API = new APIManager(true, true);
+$API->set_input($_REQUEST);
+$API->validateParameters('password');
+
+
+$API->handle(function ($request){
+
+    if ($request['password'] == '123')
+        APIManager::respond(true, 'Your password is correct');
+    else
+        APIManager::respond(false, 'Your password is not correct');
+
+});

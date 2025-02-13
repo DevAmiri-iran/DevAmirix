@@ -1,0 +1,55 @@
+{
+  "name": "devamiri/devamirix",
+  "description": "DevAmirix is a modern PHP framework that simplifies web application development. It offers a robust, modular architecture and a comprehensive set of tools to build dynamic, secure, and scalable web applications with ease.",
+  "type": "project",
+  "authors": [
+    {
+      "name": "MR. MohammadMahdi Amiri",
+      "email": "mos.amiri332@gmail.com",
+      "homepage": "https://devamiri.ir",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "config": {
+    "vendor-dir" : "app/src/vendor/"
+  },
+  "autoload": {
+    "files": [
+      "app/src/framework/include/autoload.php",
+      "app/src/extension/include/autoload.php"
+    ],
+    "psr-4": {
+      "App\\": "app/src/framework/",
+      "App\\Models\\": "app/database/Models/",
+      "App\\Middleware\\": "app/Middleware/",
+      "Ext\\": "app/src/extension"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "ext-libxml": "*",
+    "ext-dom": "*",
+    "ext-curl": "*",
+
+    "filp/whoops": "*",
+    "illuminate/database": "*",
+    "vlucas/phpdotenv": "*",
+    "monolog/monolog": "*",
+    "symfony/translation": "*",
+    "symfony/http-foundation": "*",
+    "eftec/bladeone": "*",
+    "fakerphp/faker": "*",
+    "swiftmailer/swiftmailer": "*",
+    "symfony/dom-crawler": "*",
+    "voku/html-min": "^4.5",
+    "matthiasmullie/minify": "^1.3"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Middleware;
+
+class Test
+{
+    public function handle(array $params)
+    {
+        if ($params == 'start')
+        {
+            dd('The project was started');
+        }
+    }
+}
